@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-// import  "./components/slider/slider.jsx";
+// import slide "./components/slider/slider.jsx";
 // import Header from "./components/Header";
 
 function App() {
