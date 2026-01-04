@@ -1,24 +1,25 @@
 import React from "react";
-import "./Header.css";
+import "./style.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
-      <div className="logo">MySite</div>
+      <div className="logo">هنرایرانی</div>
 
       <nav className="nav">
         <ul>
           <li>
-            <a href="/">خانه</a>
+            <Link to="/about">درباره ما</Link>
+            {/* <a href="/about">درباره ما</a> */}
           </li>
           <li>
-            <a href="/about">درباره ما</a>
+            <Link to="/servic">خدمات</Link>
+            {/* <a href="/services">خدمات</a> */}
           </li>
           <li>
-            <a href="/services">خدمات</a>
-          </li>
-          <li>
-            <a href="/contact">تماس</a>
+            <Link to="/">تماس با ما </Link>
+            {/* <a href="/contact">تماس</a> */}
           </li>
         </ul>
       </nav>

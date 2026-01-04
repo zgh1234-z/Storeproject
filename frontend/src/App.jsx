@@ -1,14 +1,17 @@
 import React from "react";
 import "./App.css";
-// import slide "./components/slider/slider.jsx";
-// import Header from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Servic from "./pages/Servic/Servic";
 
 function App() {
   return (
-    <div>
-      <div>App</div>;{/* <Slider /> */}
-      {/* <Header /> */}
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/servic" element={<Servic />} />
+    </Routes>
   );
 }
 
