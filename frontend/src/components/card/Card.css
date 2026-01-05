@@ -1,17 +1,18 @@
 .card-container {
   display: flex;
   gap: 16px;
+  background-color: #d9e1e4;
+  padding: 16px;
+  align-items: flex-start;
 }
 
-/* هر اسلاید */
+/* کارت */
 .card {
   width: 260px;
   background: #fff;
   border-radius: 14px;
   padding: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
 .card:hover {
@@ -39,7 +40,7 @@
   margin: 10px 0 6px;
   color: #333;
   line-height: 1.6;
-  height: 45px;
+  height: 36px;
   overflow: hidden;
 }
 

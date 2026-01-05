@@ -1,0 +1,12 @@
+.products {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  margin: 120px 0px 80px 0px;
+  border-radius: 10px;
+  background-color: rgb(18, 18, 34);
+}
+
+.Swiper {
+  height: 100px;
+}

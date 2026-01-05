@@ -47,7 +47,7 @@ function Prodcts() {
   ];
 
   return (
-    <div>
+    <div class="products">
       <Swiper
         breakpoints={{
           640: { slidesPerView: 3 },
@@ -63,7 +63,7 @@ function Prodcts() {
         slidesPerView={2}
       >
         {Cards.map((index) => (
-          <SwiperSlide id={index.id}>
+          <SwiperSlide class="Swiper" id={index.id}>
             <Card title={index.title} price={index.price} image={index.image} />
           </SwiperSlide>
         ))}
