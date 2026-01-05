@@ -17,9 +17,9 @@ function Slider() {
         modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 2500 }}
+        autoplay={{ delay: 3000 }}
         loop={true}
-        spaceBetween={20}
+        spaceBetween={10}
         slidesPerView={2}
       >
         <SwiperSlide>

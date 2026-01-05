@@ -1,9 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 35px 40px;
   background-color: #06323f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
