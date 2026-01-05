@@ -1,48 +1,16 @@
 import React from "react";
+import "./Card.css";
 
-function Card() {
-  const Cards = [
-    {
-      id: 1,
-      title: "فرش ماشینی کرامتیان بلوچی A زمینه لاکی",
-      price: 12000000,
-      image: "frontend/public/images/download (1).webp",
-    },
-    {
-      id: 2,
-      title: "فرش ماشینی دنیای فرش مدل روشنک سنتی ",
-      price: 35000000,
-      image: "frontend/public/images/download (2).webp",
-    },
-    {
-      id: 3,
-      title: "فرش ماشینی دنیای فرش مدل غوغا سنتی ",
-      price: 2500000,
-      image: "frontend/public/images/download (3).webp",
-    },
-    {
-      id: 4,
-      title: "فرش ماشینی دنیای فرش مدل گیشه سنتی ",
-      price: 2500000,
-      image: "frontend/public/images/download (4).webp",
-    },
-    {
-      id: 5,
-      title: "فرش ماشینی دنیای فرش مدل جیران ",
-      price: 2500000,
-      image: "frontend/public/images/download (5).webp",
-    },
-  ];
-
+function Card(title, image, price) {
   return (
-    <div>
-      {Cards.map((id, title, price, image) => (
-        <div key={id}>
-          <h1>{title}</h1>
-          <img src={image} alt="img" />
-          <h4>{price}</h4>
+    <div className="card-container">
+      <div>
+        <div className="card-image">
+          <img src={image} alt={title} />
         </div>
-      ))}
+        <h3 className="card-title">{title}</h3>
+        <p className="card-price">{price}</p>
+      </div>
     </div>
   );
 }

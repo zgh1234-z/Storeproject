@@ -7,6 +7,45 @@ import "swiper/css/navigation";
 import Card from "../card/Card";
 
 function Prodcts() {
+  const Cards = [
+    {
+      id: 1,
+      title: "فرش ماشینی کرامتیان بلوچی A زمینه لاکی",
+      price: 12000000,
+      image: "/images/download-1.webp",
+    },
+    {
+      id: 2,
+      title: "فرش ماشینی دنیای فرش مدل روشنک سنتی ",
+      price: 35000000,
+      image: "/images/download-3.webp",
+    },
+    {
+      id: 3,
+      title: "فرش ماشینی دنیای فرش مدل غوغا سنتی ",
+      price: 2500000,
+      image: "/image/download-4.webp",
+    },
+    {
+      id: 4,
+      title: "فرش ماشینی دنیای فرش مدل گیشه سنتی ",
+      price: 2500000,
+      image: "/image/download-5.webp",
+    },
+    {
+      id: 5,
+      title: "فرش ماشینی دنیای فرش مدل جیران ",
+      price: 2500000,
+      image: "/images/download-1.webp",
+    },
+    {
+      id: 6,
+      title: "فرش ماشینی مدل فانوس سنتی ",
+      price: 500000,
+      image: "/image/download-4.webp",
+    },
+  ];
+
   return (
     <div>
       <Swiper
@@ -23,15 +62,11 @@ function Prodcts() {
         spaceBetween={20}
         slidesPerView={2}
       >
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
+        {Cards.map((index) => (
+          <SwiperSlide id={index.id}>
+            <Card title={index.title} price={index.price} image={index.image} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

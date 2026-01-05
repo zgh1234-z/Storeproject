@@ -1,0 +1,51 @@
+.card-container {
+  display: flex;
+  gap: 16px;
+}
+
+/* هر اسلاید */
+.card {
+  width: 260px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* عکس */
+.card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* عنوان */
+.card-title {
+  font-size: 14px;
+  margin: 10px 0 6px;
+  color: #333;
+  line-height: 1.6;
+  height: 45px;
+  overflow: hidden;
+}
+
+/* قیمت */
+.card-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #055724;
+}
