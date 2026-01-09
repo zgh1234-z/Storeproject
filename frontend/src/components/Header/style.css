@@ -35,3 +35,10 @@
 .nav a:hover {
   color: #00bcd4;
 }
+
+.menu {
+  width: 250px;
+  border: 1px;
+  background-color: #036685;
+  display: block;
+}

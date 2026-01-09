@@ -10,16 +10,23 @@ function Header() {
       <nav className="nav">
         <ul>
           <li>
+            <Link to="/Product">محصولات</Link>
+            <div className="menu">
+              <ul>
+                <li>صنایع چوب </li>
+                <li> فرش</li>
+                <li>مس</li>
+              </ul>
+            </div>
+          </li>
+          <li>
             <Link to="/about">درباره ما</Link>
-            {/* <a href="/about">درباره ما</a> */}
           </li>
           <li>
             <Link to="/servic">خدمات</Link>
-            {/* <a href="/services">خدمات</a> */}
           </li>
           <li>
             <Link to="/">تماس با ما </Link>
-            {/* <a href="/contact">تماس</a> */}
           </li>
         </ul>
       </nav>
