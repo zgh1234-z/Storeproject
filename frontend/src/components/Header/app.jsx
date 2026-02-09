@@ -10,9 +10,7 @@ function Header() {
       <nav className="nav">
         <ul>
           <li>
-            <svg class="icon icon-cart">
-              <use xlink:href="#icon-cart"></use>
-            </svg>
+            <ShoppingCart />
           </li>
           <li>
             <details open>
