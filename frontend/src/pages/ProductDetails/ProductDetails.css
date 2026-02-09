@@ -1,0 +1,56 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 550px;
+  height: 520px;
+}
+
+.modal img {
+  width: 450px;
+  height: 250px;
+  margin-right: 24px;
+}
+
+.backdrop h2 {
+  margin: 5px;
+}
+
+.backdrop h4 {
+  margin-top: 90px;
+  margin-right: 20px;
+}
+
+.backdrop p {
+  margin: 5px;
+}
+
+.backdrop button {
+  width: 140px;
+  height: 35px;
+  margin: 25px;
+  background-color: green;
+  font-size: 18px;
+  margin-right: 350px;
+}
+
+.backdrop .close {
+  position: absolute;
+  top: -20px;
+  right: -340px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}

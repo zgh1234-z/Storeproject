@@ -10,12 +10,13 @@ function Slider() {
     <div>
       <Swiper
         breakpoints={{
+          320: { slidesPerView: 1 },
           640: { slidesPerView: 1 },
           768: { slidesPerView: 1 },
           1024: { slidesPerView: 1 },
         }}
         modules={[Navigation, Pagination, Autoplay]}
-        navigation
+        // navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         loop={true}
@@ -28,9 +29,9 @@ function Slider() {
         <SwiperSlide>
           <img src="/images/slide2.webp" alt="slide2" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="/images/slide3.webp" alt="slide3" />
-        </SwiperSlide>
+        {/* <SwiperSlide> */}
+        {/* <img src="/images/slide3.webp" alt="slide3" /> */}
+        {/* </SwiperSlide> */}
       </Swiper>
     </div>
   );

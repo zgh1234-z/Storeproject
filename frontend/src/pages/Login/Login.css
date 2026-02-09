@@ -1,0 +1,124 @@
+.v {
+  background-color: #194346;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 15px;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgb(104, 98, 98);
+  background-color: rgb(255, 255, 255);
+}
+
+.form input {
+  height: 25px;
+  width: 350px;
+  padding: 15px;
+  gap: 50px;
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+  display: block;
+  font-size: 15px;
+}
+
+.form button {
+  cursor: pointer;
+  background: #3498db;
+  border: none;
+  color: white;
+  display: block;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.form h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(33, 120, 179);
+}
+
+.form small {
+  display: none;
+}
+
+.form button:hover {
+  background-color: #2980b9;
+}
+.form.error input {
+  border-color: #e74c3c;
+}
+
+.form .success input {
+  border-color: #2ecc71;
+}
+
+.form.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+@media (max-width: 375px) {
+  .form {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgb(104, 98, 98);
+    background-color: rgb(255, 255, 255);
+  }
+
+  .form input {
+    height: 10px;
+    width: 150px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    display: block;
+    font-size: 15px;
+  }
+
+  .form button {
+    cursor: pointer;
+    background: #3498db;
+    border: none;
+    color: white;
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    width: 150px;
+    transition: background-color 0.3s;
+  }
+
+  .form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+}

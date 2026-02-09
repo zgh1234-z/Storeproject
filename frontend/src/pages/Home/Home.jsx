@@ -1,14 +1,20 @@
 import React from "react";
 import Header from "../../components/Header/app";
 import Slider from "../../components/slider/slider";
-import Prodcts from "../../components/Products/Products";
+import Products from "../../components/Products/Products";
+import Arshev from "../../components/Arshev/Arshev";
+import Footer from "../../components/Footer/Footer";
+import Comment from "../../components/Comment/Comment";
 
 function Home() {
   return (
     <div>
       <Header />
       <Slider />
-      <Prodcts />
+      <Products />
+      <Arshev />
+      <Comment />
+      <Footer />
     </div>
   );
 }

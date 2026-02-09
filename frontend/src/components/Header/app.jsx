@@ -4,20 +4,35 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="header">
+    <div className="header">
       <div className="logo">هنرایرانی</div>
 
       <nav className="nav">
         <ul>
           <li>
-            <Link to="/Product">محصولات</Link>
-            <div className="menu">
-              <ul>
-                <li>صنایع چوب </li>
-                <li> فرش</li>
-                <li>مس</li>
+            <svg class="icon icon-cart">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+          </li>
+          <li>
+            <details open>
+              <summary>محصولات </summary>
+
+              <ul className="ulmenu">
+                <li>
+                  <Link to="/Wood">صنایع چوبی</Link>
+                </li>
+                <li>
+                  <Link to="/فرش">فرش</Link>
+                </li>
+                <li>
+                  <Link to="/مس">مس</Link>
+                </li>
+                <li>
+                  <Link to="/مجسمه سازی">مجسمه سازی</Link>
+                </li>
               </ul>
-            </div>
+            </details>
           </li>
           <li>
             <Link to="/about">درباره ما</Link>
@@ -26,11 +41,14 @@ function Header() {
             <Link to="/servic">خدمات</Link>
           </li>
           <li>
-            <Link to="/">تماس با ما </Link>
+            <Link to="/Login">
+              <button>ثبت نام </button>
+              <button>ورود</button>
+            </Link>
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 
