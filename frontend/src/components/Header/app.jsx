@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { ShoppingCart } from "lucide-react";
 
 function Header() {
   return (
@@ -10,7 +11,10 @@ function Header() {
       <nav className="nav">
         <ul>
           <li>
-            <ShoppingCart />
+            <Link to="/cart">
+              {" "}
+              <ShoppingCart />
+            </Link>
           </li>
           <li>
             <details open>

@@ -14,7 +14,7 @@ function ProductDetails({ product, onClose, onAddToCart }) {
         <button
           onClick={() => {
             onAddToCart(product);
-            onClose();
+            // onClose();
           }}
         >
           افزودن به سبد خرید

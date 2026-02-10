@@ -1,0 +1,10 @@
+.cart {
+  background-color: rgb(2, 3, 24);
+  color: antiquewhite;
+  height: 800px;
+}
+
+.cart img {
+  height: 40px;
+  width: 40px;
+}
