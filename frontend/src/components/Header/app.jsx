@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import "./style.css";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
@@ -17,7 +18,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <details open>
+            <details>
               <summary>محصولات </summary>
 
               <ul className="ulmenu">

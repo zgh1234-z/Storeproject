@@ -7,6 +7,7 @@ import Servic from "./pages/Servic/Servic";
 import Login from "./pages/Login/Login";
 import Wood from "./pages/Wood/Wood";
 import Cart from "./pages/Cart/Cart";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/Login" element={<Login />} />
       <Route path="/Wood" element={<Wood />} />
       <Route path="/Cart" element={<Cart />} />
+      <Route path="/" element={<ProductDetails />} />
     </Routes>
   );
 }
