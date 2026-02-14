@@ -21,6 +21,7 @@
   color: #50e3fd;
   font-size: 24px;
   font-weight: bold;
+  text-decoration: none;
 }
 .nav ul {
   align-items: center;
@@ -66,8 +67,6 @@ button {
   width: 50px;
   background-color: #2fcadf;
 }
-
-
 
 @media (max-width: 375px) {
   * {

@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "../../components/CartContext/CartContext";
+import Productstyle from "../../components/Productstyle/Productstyle";
 import "./Cart.css";
 
 function Cart() {
@@ -13,12 +14,15 @@ function Cart() {
       ) : (
         cart.map((item, index) => (
           <div key={index}>
-            <h3>{item.img}</h3>
+            <Productstyle item={item} />
 
             <button onClick={() => removeFromCart(index)}>حذف</button>
           </div>
         ))
       )}
+      <div className="buy">
+        <button>پرداخت </button>
+      </div>
     </div>
   );
 }

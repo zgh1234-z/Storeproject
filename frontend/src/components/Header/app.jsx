@@ -7,7 +7,9 @@ import { ShoppingCart } from "lucide-react";
 function Header() {
   return (
     <div className="header">
-      <div className="logo">هنرایرانی</div>
+      <Link to="/" className="logo">
+        هنرایرانی
+      </Link>
 
       <nav className="nav">
         <ul>
@@ -38,11 +40,14 @@ function Header() {
             </details>
           </li>
           <li>
-            <Link to="/about">درباره ما</Link>
+            <Link to="/contactus">تماس با ما </Link>
           </li>
           <li>
-            <Link to="/servic">خدمات</Link>
+            <Link to="/about">درباره ما</Link>
           </li>
+          {/* <li> */}
+          {/* <Link to="/servic">خدمات</Link> */}
+          {/* </li> */}
           <li>
             <Link to="/Login">
               <button>ثبت نام </button>

@@ -1,0 +1,20 @@
+.contactus {
+  background-color: rgb(200, 255, 255);
+  color: rgb(9, 37, 70);
+  height: 712px;
+  width: 100%;
+  align-content: center;
+}
+
+.contactus p {
+  font-size: 30px;
+  padding: 20px;
+  margin-right: 150px;
+  margin-bottom: 80px;
+}
+
+.contactus h2 {
+  padding: 10px;
+  margin-right: 280px;
+  margin-top: 10px;
+}

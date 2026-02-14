@@ -1,10 +1,28 @@
 .cart {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   background-color: rgb(2, 3, 24);
   color: antiquewhite;
-  height: 800px;
+  height: 1000px;
+  margin-bottom: 0px;
+  padding: 50px;
 }
 
-.cart img {
-  height: 40px;
-  width: 40px;
+.buy {
+  display: flex;
+  justify-self: left;
+  margin: 60px;
+  padding: 60px;
+}
+
+.buy button {
+  background-color: green;
+  height: 80px;
+  width: 200px;
+  padding: 20px;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 350px;
 }
