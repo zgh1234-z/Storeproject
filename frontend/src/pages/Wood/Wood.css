@@ -1,21 +1,17 @@
-.ch {
+.wood {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 10px;
+  padding: 40px;
   margin: 30px;
   gap: 20px;
-  height: 600px;
+  height: 800px;
 }
 
-.ch h1 {
+.wood h1 {
   margin-top: 100px;
   margin-right: 20px;
   padding: 10px;
   text-align: right;
   color: rgb(30, 41, 100);
-}
-
-.w {
-  height: 800px;
 }

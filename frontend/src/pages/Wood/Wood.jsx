@@ -8,19 +8,18 @@ import crop from "../../components/Pageproducts/Pageproducts";
 
 function Wood() {
   return (
-    <div className="wood">
+    <>
       <Header />
-
       <h1>صنایع دستی چوبی</h1>
 
-      <div className="w">
+      <div className="wood">
         {crop.map((item) => (
           <Productstyle item={item} />
         ))}
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -1,30 +1,17 @@
 import React, { useState } from "react";
 import "./Productstyle.css";
+import { Link } from "react-router-dom";
 import ProductDetails from "../../pages/ProductDetails/ProductDetails";
-import { useCart } from "../../components/CartContext/CartContext";
 
 function Productstyle({ item }) {
-  const [selectedProduct, setSelectedProduct] = useState(false);
-
-  const { addToCart } = useCart();
-
   return (
     <div className="ch">
-      <div
-        key={item.id}
-        className="product"
-        onClick={() => setSelectedProduct(item)}
-      >
+      <Link to={`/product/${item.id}`}>
         <img src={item.image} alt={item.Name} />
         <h3>{item.Name}</h3>
-        <p>{item.Description}</p>
+        {/* <p>{item.Description}</p> */}
         <p>{item.price}تومان </p>
-      </div>
-      {/* <ProductDetails
-        product={selectedProduct}
-        onClose={() => setSelectedProduct([])}
-        onAddToCart={addToCart}
-      /> */}
+      </Link>
     </div>
   );
 }

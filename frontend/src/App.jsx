@@ -18,7 +18,8 @@ function App() {
       <Route path="/Login" element={<Login />} />
       <Route path="/Wood" element={<Wood />} />
       <Route path="/Cart" element={<Cart />} />
-      <Route path="/" element={<ProductDetails />} />
+      {/* <Route path="/" element={<ProductDetails />} /> */}
+      <Route path="/product/:id" element={<ProductDetails />} />
     </Routes>
   );
 }

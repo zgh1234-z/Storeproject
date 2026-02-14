@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 
 function Login() {
-  // const isRequiredvalid = checkRequired([
-  //   username,
-  //   email,
-  //   password,
-  //   confirmpassword,
-  // ]);
+  const [username, setUsername] = useState("");
 
-  // const pattern = new RegExp("^[a-zA-z0-9-.+-]=@[a-zA-ZO-9-]=.[a-zA-ZO-9-.]=$");
-  // const regexresult = pattern.test(useremail);
+  const [email, setEmail] = useState("");
+
+  const [password, setPassword] = useState("");
+
+  const [confirmpassword, setConfirmpassword] = useState("");
+
+  const [message, setMessage] = useState("");
 
   const handleClick = () => {
-    if (username.value.iength < 6) {
-      return <small> نام کاربری باید بیشتر از 6 حرف داشته باشد</small>;
-    } else if (!regexresult) {
-      return <small> ایمیل معتبر نمی باشد</small>;
-    } else if (password.value.length < 8) {
-      return <small>پسورد حداقل باید 8 کاراکتر داشته باشد </small>;
-    } else if (password != passconfirm) {
-      return <small>پسورد های وارد شده مطابقت ندارند </small>;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (username.length < 4) {
+      setMessage("نام کاربری باید بیشتر از 4 حرف باشد ");
+    } else if (!emailPattern.test(email)) {
+      setMessage("ایمیل معتبر نمی باشد ");
+    } else if (password.length < 8) {
+      setMessage("پسورد باید بیشتر ار 8 کاراکتر باشد ");
+    } else if (password !== confirmpassword) {
+      setMessage("پسورد های وارد شدهمطابقت ندارد ");
     } else {
-      return <small>ثبت نام با موفقیت انجام شد </small>;
+      setMessage("ثبت نام با موفقیت انجام شد ");
     }
   };
 
@@ -30,19 +32,39 @@ function Login() {
     <div className="v">
       <div className="form">
         <h1>ورود / ثبت نام </h1>
-        <input type="text" id="username" placeholder="نام کاربری " />
-        {/* <label htmlFor="username">نام کاربری</label> */}
+
+        <input
+          type="text"
+          placeholder="نام کاربری "
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+
         <small></small>
-        <input type="text" id="useremail" placeholder="ایمیل" />
-        {/* <label htmlFor="useremail">ایمیل</label> */}
-        <small></small>
-        <input type="text" id="userpassword" placeholder="رمزورود" />
-        {/* <label htmlFor="userpassword">رمزورود</label> */}
-        <small></small>
-        <input type="text" id="confirmpassword" placeholder="تکرار رمز ورود" />
-        {/* <label htmlFor="confirmpassword">تکرار رمز ورود </label> */}
-        <small></small>
+        <input
+          type="text"
+          placeholder="ایمیل"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="رمزورود"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="تکرار رمز ورود "
+          value={confirmpassword}
+          onChange={(e) => setConfirmpassword(e.target.value)}
+        />
+
         <button onClick={handleClick}>ارسال</button>
+
+        <small>{message}</small>
       </div>
     </div>
   );

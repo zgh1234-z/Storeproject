@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 820px;
+  width: 100%;
 }
 
 .backdrop button {
@@ -13,4 +15,25 @@
   background-color: green;
   font-size: 18px;
   margin-right: 350px;
+  margin-top: 300px;
+}
+
+.backdrop img {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+  border-radius: 20px;
+}
+
+.backdrop h2 {
+  margin-bottom: 500px;
+}
+
+.backdrop p {
+  margin-bottom: 300px;
+}
+
+.backdrop h4 {
+  margin-top: 300px;
 }
