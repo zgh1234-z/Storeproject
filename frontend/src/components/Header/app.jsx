@@ -10,6 +10,9 @@ function Header() {
       <Link to="/" className="logo">
         هنرایرانی
       </Link>
+      {/* <Link to="/Pageproducts">
+        <input type="search">جستجو </input>
+      </Link> */}
 
       <nav className="nav">
         <ul>
@@ -24,6 +27,9 @@ function Header() {
               <summary>محصولات </summary>
 
               <ul className="ulmenu">
+                <li>
+                  <Link to="/Allproducts">همه محصولات</Link>
+                </li>
                 <li>
                   <Link to="/Wood">صنایع چوبی</Link>
                 </li>

@@ -9,6 +9,7 @@ import Login from "./pages/Login/Login";
 import Wood from "./pages/Wood/Wood";
 import Cart from "./pages/Cart/Cart";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Allproducts from "./pages/Allproducts/Allproducts";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/Cart" element={<Cart />} />
       {/* <Route path="/" element={<ProductDetails />} /> */}
       <Route path="/product/:id" element={<ProductDetails />} />
+      <Route path="/Allproducts" element={<Allproducts />} />
     </Routes>
   );
 }
