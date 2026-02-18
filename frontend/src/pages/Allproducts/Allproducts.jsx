@@ -8,12 +8,22 @@ import crop from "../../components/Pageproducts/Pageproducts";
 function Allproducts() {
   const [selectedCategory, setSelectedCategory] = useState([]);
 
-  let filter;
+  let filteredproducts;
 
-  if (selectedCategory === "all") {
-    filter = products;
+  if (selectedCategory.length === 0) {
+    filteredproducts = crop;
   } else {
-    filter = products.filter((item) => item.category === selectedCategory);
+    filteredproducts = crop.filter((item) =>
+      selectedCategory.includes(item.category),
+    );
+  }
+
+  function Checkbox(category) {
+    if (selectedCategory.includes(category)) {
+      setSelectedCategory(selectedCategory.filter((item) => item !== category));
+    } else {
+      setSelectedCategory([...selectedCategory, category]);
+    }
   }
 
   return (
@@ -21,20 +31,40 @@ function Allproducts() {
       <Header />
       <h2>همه محصولات </h2>
 
-      <input type="checkbox" name="چوبی" />
+      <div className="K">
+        <div className="filter">
+          <input
+            type="checkbox"
+            checked={selectedCategory.includes("wood")}
+            onChange={() => Checkbox("wood")}
+          />
+          لوازم چوبی
+          <input
+            type="checkbox"
+            checked={selectedCategory.includes("copper")}
+            onChange={() => Checkbox("copper")}
+          />
+          لوازم مسی
+          <input
+            type="checkbox"
+            checked={selectedCategory.includes("carpet")}
+            onChange={() => Checkbox("carpet")}
+          />
+          فرش
+          <input
+            type="checkbox"
+            checked={selectedCategory.includes("statue")}
+            onChange={() => Checkbox("statue")}
+          />
+          مجسمه سازی
+        </div>
 
-      <div className="All">
-        {crop.map((item) => (
-          <Productstyle item={item} />
-        ))}
+        <div className="All">
+          {filteredproducts.map((item) => (
+            <Productstyle key={item.id} item={item} />
+          ))}
+        </div>
       </div>
-      <div className="filter">
-        <input type="cheackbox"> چوبی </input>
-        <input type="cheackbox"> فرش </input>
-        <input type="cheackbox"> مسی </input>
-        <input type="cheackbox"> مجسمه سازی </input>
-      </div>
-
       <Footer />
     </div>
   );

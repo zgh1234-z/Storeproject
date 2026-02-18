@@ -10,12 +10,19 @@ function Header() {
       <Link to="/" className="logo">
         هنرایرانی
       </Link>
-      {/* <Link to="/Pageproducts">
-        <input type="search">جستجو </input>
-      </Link> */}
 
       <nav className="nav">
         <ul>
+          <li>
+            <Link to="/Allproducts">
+              <input
+                type="search"
+                placeholder="جستجوی محصول..."
+                // value={searchTerm}
+                // onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </Link>
+          </li>
           <li>
             <Link to="/cart">
               {" "}
