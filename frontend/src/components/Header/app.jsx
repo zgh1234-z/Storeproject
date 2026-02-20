@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-
 import "./style.css";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 
-function Header() {
+function Header({ search, setSearch }) {
   return (
     <div className="header">
       <Link to="/" className="logo">
@@ -14,14 +13,14 @@ function Header() {
       <nav className="nav">
         <ul>
           <li>
-            <Link to="/Allproducts">
-              <input
-                type="search"
-                placeholder="جستجوی محصول..."
-                // value={searchTerm}
-                // onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </Link>
+            {/* <Link to="/Allproducts"> */}
+            <input
+              type="search"
+              value={search}
+              placeholder="جستجوی محصول..."
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            {/* </Link> */}
           </li>
           <li>
             <Link to="/cart">

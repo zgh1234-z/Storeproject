@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Productstyle from "../../components/Productstyle/Productstyle";
 import crop from "../../components/Pageproducts/Pageproducts";
 
-function Allproducts() {
+function Allproducts({ search }) {
   const [selectedCategory, setSelectedCategory] = useState([]);
 
   let filteredproducts;
@@ -18,6 +18,10 @@ function Allproducts() {
     );
   }
 
+  const searchbox = filteredproducts.filter((item) =>
+    (item.title || "").toLowerCase().includes(search.toLowerCase()),
+  );
+
   function Checkbox(category) {
     if (selectedCategory.includes(category)) {
       setSelectedCategory(selectedCategory.filter((item) => item !== category));
@@ -28,7 +32,6 @@ function Allproducts() {
 
   return (
     <div>
-      <Header />
       <h2>همه محصولات </h2>
 
       <div className="K">
@@ -60,9 +63,11 @@ function Allproducts() {
         </div>
 
         <div className="All">
-          {filteredproducts.map((item) => (
-            <Productstyle key={item.id} item={item} />
-          ))}
+          {searchbox.length > 0 ? (
+            searchbox.map((item) => <Productstyle key={item.id} item={item} />)
+          ) : (
+            <p className="no-product">محصولی با این مشخصات پیدا نشد</p>
+          )}
         </div>
       </div>
       <Footer />

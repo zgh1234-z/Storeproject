@@ -1,8 +1,8 @@
 const crop = [
   {
     id: "w1",
-    ccategory: "wood",
-    Name: "محصول 1",
+    category: "wood",
+    title: "محصول 1",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -10,7 +10,7 @@ const crop = [
   {
     id: "w2",
     category: "wood",
-    Name: "محصول 2",
+    title: "محصول 2",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -18,7 +18,7 @@ const crop = [
   {
     id: "w3",
     category: "wood",
-    Name: "محصول 3",
+    title: "محصول 3",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -26,7 +26,7 @@ const crop = [
   {
     id: "w4",
     category: "wood",
-    Name: "محصول 4",
+    title: "محصول 4",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -34,7 +34,7 @@ const crop = [
   {
     id: "w5",
     category: "wood",
-    Name: "محصول 5",
+    title: "محصول 5",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -42,7 +42,7 @@ const crop = [
   {
     id: "w6",
     category: "wood",
-    Name: "محصول 6",
+    title: "محصول 6",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -50,7 +50,7 @@ const crop = [
   {
     id: "w7",
     category: "wood",
-    Name: "محصول 7",
+    title: "محصول 7",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -58,7 +58,7 @@ const crop = [
   {
     id: "w8",
     category: "wood",
-    Name: "محصول 8",
+    title: "محصول 8",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -66,8 +66,8 @@ const crop = [
 
   {
     id: "c1",
-    ccategory: "copper",
-    Name: "محصول 1",
+    category: "copper",
+    title: "محصول 1",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -75,7 +75,7 @@ const crop = [
   {
     id: "c2",
     category: "copper",
-    Name: "محصول 2",
+    title: "محصول 2",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -83,7 +83,7 @@ const crop = [
   {
     id: "c3",
     category: "copper",
-    Name: "محصول 3",
+    title: "محصول 3",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -91,7 +91,7 @@ const crop = [
   {
     id: "c4",
     category: "copper",
-    Name: "محصول 4",
+    title: "محصول 4",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -99,7 +99,7 @@ const crop = [
   {
     id: "c5",
     category: "copper",
-    Name: "محصول 5",
+    title: "محصول 5",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -107,7 +107,7 @@ const crop = [
   {
     id: "c6",
     category: "copper",
-    Name: "محصول 6",
+    title: "محصول 6",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -115,7 +115,7 @@ const crop = [
   {
     id: "c7",
     category: "copper",
-    Name: "محصول 7",
+    title: "محصول 7",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -123,7 +123,7 @@ const crop = [
   {
     id: "c8",
     category: "copper",
-    Name: "محصول 8",
+    title: "محصول 8",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -131,8 +131,8 @@ const crop = [
 
   {
     id: "ca1",
-    ccategory: "carpet",
-    Name: "محصول 1",
+    category: "carpet",
+    title: "محصول 1",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -140,7 +140,7 @@ const crop = [
   {
     id: "ca2",
     category: "carpet",
-    Name: "محصول 2",
+    title: "محصول 2",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -148,7 +148,7 @@ const crop = [
   {
     id: "ca3",
     category: "carpet",
-    Name: "محصول 3",
+    title: "محصول 3",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -156,7 +156,7 @@ const crop = [
   {
     id: "ca4",
     category: "carpet",
-    Name: "محصول 4",
+    title: "محصول 4",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -164,7 +164,7 @@ const crop = [
   {
     id: "ca5",
     category: "carpet",
-    Name: "محصول 5",
+    title: "محصول 5",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -172,15 +172,15 @@ const crop = [
   {
     id: "ca6",
     category: "carpet",
-    Name: "محصول 6",
+    title: "محصول 6",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
   },
   {
     id: "ca7",
-    category: "copper",
-    Name: "محصول 7",
+    category: "coppet",
+    title: "محصول 7",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -188,7 +188,7 @@ const crop = [
   {
     id: "ca8",
     category: "carpet",
-    Name: "محصول 8",
+    title: "محصول 8",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -196,8 +196,8 @@ const crop = [
 
   {
     id: "s1",
-    ccategory: "statue",
-    Name: "محصول 1",
+    category: "statue",
+    title: "محصول 1",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -205,7 +205,7 @@ const crop = [
   {
     id: "s2",
     category: "statue",
-    Name: "محصول 2",
+    title: "محصول 2",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -213,7 +213,7 @@ const crop = [
   {
     id: "s3",
     category: "statue",
-    Name: "محصول 3",
+    title: "محصول 3",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -221,7 +221,7 @@ const crop = [
   {
     id: "s4",
     category: "copper",
-    Name: "محصول 4",
+    title: "محصول 4",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -229,7 +229,7 @@ const crop = [
   {
     id: "s5",
     category: "statue",
-    Name: "محصول 5",
+    title: "محصول 5",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -237,7 +237,7 @@ const crop = [
   {
     id: "s6",
     category: "statue",
-    Name: "محصول 6",
+    title: "محصول 6",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -245,7 +245,7 @@ const crop = [
   {
     id: "s7",
     category: "statue",
-    Name: "محصول 7",
+    title: "محصول 7",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
@@ -253,7 +253,7 @@ const crop = [
   {
     id: "s8",
     category: "statue",
-    Name: "محصول 8",
+    title: "محصول 8",
     Description: "توضیحات",
     price: 10000,
     image: "/images/download-4.webp",
