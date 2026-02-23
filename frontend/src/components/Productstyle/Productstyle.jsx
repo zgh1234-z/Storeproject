@@ -8,9 +8,10 @@ function Productstyle({ item }) {
     <div className="ch">
       <Link to={`/product/${item.id}`}>
         <img src={item.image} alt={item.Name} />
-        <h3>{item.Name}</h3>
-        {/* <p>{item.Description}</p> */}
-        <p>{item.price}تومان </p>
+        <h3>{item.title}</h3>
+        <p>{item.Description}</p>
+        <br></br>
+        <h4>{item.price}تومان </h4>
       </Link>
     </div>
   );

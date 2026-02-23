@@ -13,9 +13,11 @@ function Wood() {
       <h1>صنایع دستی چوبی</h1>
 
       <div className="wood">
-        {crop.map((item) => (
-          <Productstyle item={item} />
-        ))}
+        {crop
+          .filter((item) => item.category === "wood")
+          .map((item) => (
+            <Productstyle key={item.id} item={item} />
+          ))}
       </div>
 
       <Footer />
